@@ -5,14 +5,14 @@ import chatApp from './lottie/chatApp.json'
 import blog from './lottie/blog.json'
 
 const Label: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <div className="w-full h-screen flex items-center justify-center">
+  <div className="w-full h-[97vh] flex items-center justify-center">
     <h2 className="text-2xl font-serif text-orange-100">{children}</h2>
   </div>
 )
 
 export default function App() {
   return (
-    <div className="p-4 h-full w-full">
+    <div className="p-4 h-full w-full flex flex-col gap-6">
       <Label>Scroll Down</Label>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 w-full">
         <Thumbnail anim={saasDash} mobileOffset={80} desktopOffset={30} />
